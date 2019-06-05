@@ -29,10 +29,7 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-body {
-	line-height: 1;
-	background-color: red;
-}
+
 ol, ul {
 	list-style: none;
 }
@@ -58,3 +55,433 @@ html, body {
     height: 100%;
 }
 
+/* Variables */
+@blue: rgb(33, 53, 146);
+@red: rgb(139, 9, 24);
+@white: #FFF;
+
+
+
+/* Mixin */
+.gradient (@origin: left, @start: #ffffff, @stop: #000000) {
+	background-color: @start;
+	background-image: -webkit-linear-gradient(@origin, @start, @stop);
+	background-image: -moz-linear-gradient(@origin, @start, @stop);
+	background-image: -o-linear-gradient(@origin, @start, @stop);
+	background-image: -ms-linear-gradient(@origin, @start, @stop);
+	background-image: linear-gradient(@origin, @start, @stop);
+}
+
+.gradient (@origin: left, @start: #ffffff, @stop: #000000) {
+	background-color: @start;
+	background-image: -webkit-linear-gradient(@origin, @start, @stop);
+	background-image: -moz-linear-gradient(@origin, @start, @stop);
+	background-image: -o-linear-gradient(@origin, @start, @stop);
+	background-image: -ms-linear-gradient(@origin, @start, @stop);
+	background-image: linear-gradient(@origin, @start, @stop);
+}
+/* */
+
+
+.main-container{ 
+    width:1000px;
+    margin:auto;
+}
+body{
+	font-family: 'Roboto Condensed', sans-serif;
+	background: black;
+}
+body a{
+	text-decoration:none;
+}
+h1,h2,h3,h4,h5,h6{
+	margin:0;	
+	font-family: 'Overlock', cursive;
+}
+p{
+	margin:0;
+}
+ul{
+	margin:0; 
+	padding:0;
+}
+body a:hover{
+	text-decoration:none;
+}
+/*--baner--*/
+
+
+.banner-info{
+	padding: 4em 0;
+}
+
+
+.header-right {
+    padding-left: 3em;
+}
+.header-right h1 {
+    font-size: 2.5em;
+    color: @red;
+    margin: 0.5em 0 0;
+}
+.header-right h2 {
+    font-size: 1.2em;
+    color: white;
+    background: @blue;
+    display: inline-block;
+    padding: .5em 1.5em;
+    position: relative;
+}
+.header-right h2:before {
+    width: 0;
+    height: 0;
+    position: absolute;
+    content: '';
+    bottom: -9px;
+    left: 12px;
+    border-style: solid;
+    border-width: 10px 10px 0 10px;
+    border-color: @blue transparent transparent transparent;
+}
+.header-right h6 {
+    font-size: 1em;
+    color: @blue;;
+    margin-top: 0.8em;
+    letter-spacing: 6px;
+}
+/*--//banner-top--*/
+/*--top-nav--*/
+.top-nav {
+    background: black;
+}
+.nav > li {
+    display: inline-block;
+}
+ul.nav.navbar {
+    margin: 0;
+    text-align: center;
+}
+ul.nav.navbar li a {
+    color: @white;
+    padding: 1em 2em;
+    font-size: 1.2em;
+    font-family: 'Overlock', cursive;
+}
+ul.nav.navbar li a:hover,ul.nav.navbar li a.active,ul.nav.navbar li a:focus{
+    color: red;
+    background: @white;
+}
+/*--//top-nav--*/
+/*--about--*/
+.about,.work,.education,.skills,.portfolio,.contact{
+	padding:6em 0;
+}
+.about{
+    .gradient(left, #252222, #500404);
+    text-align: center;
+}
+
+h3.title {
+    font-size: 4em;
+    text-align: center;
+    color: @blue;
+    border-bottom: 4px double rgba(247, 197, 106, 0.35);
+    padding-bottom: 0.2em;
+	margin-bottom: 1em;
+}
+p {
+    font-size: 1em;
+    color: lightslategray;
+    line-height: 1.8em;
+}
+/*--//about--*/
+
+/*--work--*/
+.work {
+    background: #000;
+}
+.work-left {
+    text-align: right;
+    padding: 3em 5em 0 0;
+}
+.work-right {
+    border-left: 1px solid #999;
+    padding: 2.5em 0 2em 6em;
+}
+.work-info h4 {
+    font-size: 1.2em;
+    background: red;
+    display: inline-block;
+    padding: .6em 1.2em;
+    color: #fff;
+	position:relative;
+}
+.work-info h4:before {
+    width: 0;
+    height: 0;
+    position: absolute;
+    content: '';
+    top: 9px;
+    right: -14px;
+    border-style: solid;
+    border-width: 10px 0 10px 16px;
+    border-color: transparent transparent transparent rgb(0, 139, 139);
+}
+.work-info h5 {
+    font-size: 1.3em;
+    color: #F7E612;
+    margin-bottom: .5em;
+    border: 1px solid #F7E612;
+    display: inline-block;
+    padding: 0 1.2em;
+}
+.work-info h5 span.glyphicon {
+    font-size: 0.9em;
+    color: #fff;
+    background: red;
+    padding: 1em;
+    border-radius: 70%;
+    transition: .5s all;
+    transform: scale(1);
+   
+}
+.work-right h5 span.glyphicon {
+    margin-right: 5em;
+    margin-left: -8em;
+}
+.work-left2 h5 span.glyphicon {
+    margin-left: 4em;
+    margin-right: -7.3em;
+    z-index: 9;
+}
+.work-right.work-right2 {
+    min-height: 210px;
+    float: right;
+}
+.work-right.work-right2 h4:before {
+    left: -14px;
+}
+.work-right.work-right2 h4 {
+    margin-top: 0.8em;
+}
+
+/*--//work--*/
+/*--education--*/
+.education .work-info h5 {
+    color: white;
+}
+/*--//education--*/
+/*--skills--*/
+.skills{
+    background:black;
+}
+.skills-info h6 {
+    font-size: 1.1em;
+    color: white;
+    margin-bottom: 0.6em;
+}
+
+/*--//skills--*/
+
+
+
+/*--contact--*/
+.contact{
+    .gradient(left, #663333, #333333);
+}
+.contact-left iframe {
+    width: 100%;
+    min-height: 29.5em;
+    border: none;
+}
+
+.address-left {
+    float: left;
+    width: 41%;
+	position: relative;
+}
+.address-right {
+    float: right;
+    width: 46%;
+}
+.contact p {
+    color: #fff;
+    font-weight: 300;
+}
+
+.address-left:after {
+    content: '';
+    width: 1px;
+    height: 100%;
+    background: #ccc;
+    position: absolute;
+    top: 0;
+    right: -17px;
+}
+.contact-form input[type="text"] {
+    width: 49%;
+    color: #fff;
+    background: none;
+    outline: none;
+    font-size: 1em;
+    padding: .8em 1em;
+    border: 1px solid #8C8C8C;
+    display: inline-block;
+}
+.contact-form textarea {
+    width: 49%;
+    background: none;
+    color: #fff;
+    font-size: 1em;
+    outline: none;
+    padding: .8em 1em;
+    border: 1px solid #8C8C8C;
+    min-height: 10em;
+}
+.contact-form input[type="submit"] {
+    outline: none;
+    color: #fff;
+    padding: 0.6em 1em;
+    font-size: 1.1em;
+    margin: 1em 0 0 0;
+    background: #008B8B;
+    border: 2px solid #008B8B;
+    width: 49%;
+}
+.contact-form input[type="submit"]:hover {
+    background: none;
+    color: #008B8B;
+}
+/*--//contact--*/
+/*--footer--*/
+.footer {
+    padding: 2em 0;
+    text-align: center;
+    background: #1F1F1F;
+}
+.footer p {
+    color: #fff;
+	font-size: 1.1em;
+}  
+
+/*--//footer--*/
+
+/*---- responsive-design -----
+@media(max-width:800px){
+
+.header-left {
+    float: left;
+    width: 40%;
+}
+.header-right {
+    padding-left: 2em;
+    float: right;
+    width: 60%;
+    padding-right: 0;
+}
+.header-right h2 {
+    font-size: 1em;
+}
+.header-right h1 {
+    font-size: 2em;
+}
+.header-right h6 {
+    font-size: 0.9em;
+    margin-top: 0.6em;
+    letter-spacing: 5px;
+}
+
+ul.nav.navbar li a {
+    padding: 1em 1.5em;
+}
+h3.title {
+    font-size: 3.5em;
+    margin-bottom: 0.6em;
+}
+.work-left {
+    padding: 2em 4em 0 0;
+    float: left;
+    width: 50%;
+}
+.work-right {
+    padding: 2em 0 0.5em 5em;
+    float: right;
+    width: 50%;
+}
+.work-right h5 span.glyphicon {
+    margin-right: 5em;
+    margin-left: -7.3em;
+}
+.work-info h5 {
+    font-size: 1.2em;
+    padding: 0 1em;
+}
+.work-left2 h5 span.glyphicon {
+    margin-left: 3.4em;
+    margin-right: -6.4em;
+}
+.contact-left iframe {
+    width: 100%;
+    min-height: 20em;
+    border: none;
+}
+.contact-right {
+    margin-top: 2em;
+}
+.contact-form input[type="text"].email {
+    margin: 2em 0 1em 0.5em;
+}
+}
+*/
+
+@media(max-width:480px){
+.header-left {
+    float: none;
+    width: 40%;
+    margin: 0 auto;
+}
+.header-right {
+    float: none;
+    width: 100%;
+}
+h3.title {
+    font-size: 2.5em;
+}
+p {
+    font-size: 0.9em;
+}
+.work-info h4 {
+    font-size: 1em;
+}
+.work-info h4:before {
+    right: -10px;
+    border-width: 7px 0 7px 10px;
+}
+.work-info h5 {
+    font-size: 1em;
+}
+.work-left {
+    padding: 1em 3em 0 0;
+}
+.work-right {
+    padding: 1em 0 0.5em 3em;
+}
+.work-right h5 span.glyphicon {
+    margin-right: 3em;
+    margin-left: -6em;
+}
+.work-right.work-right2 h4:before {
+    left: -10px;
+}
+.work-left2 h5 span.glyphicon {
+    margin-left: 3em;
+    margin-right: -6.2em;
+}
+
+.contact-form input[type="submit"] {
+    font-size: 1em;
+}
+.footer p {
+    font-size: 1em;
+}
+}
