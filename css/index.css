@@ -423,73 +423,70 @@ p {
   font-size: 1.1em;
 }
 /*--//footer--*/
-/*---- responsive-design -----
-@media(max-width:800px){
-
-.header-left {
+/*---- responsive-design -----*/
+@media (max-width: 800px) {
+  .header-left {
     float: left;
     width: 40%;
-}
-.header-right {
+  }
+  .header-right {
     padding-left: 2em;
     float: right;
     width: 60%;
     padding-right: 0;
-}
-.header-right h2 {
+  }
+  .header-right h2 {
     font-size: 1em;
-}
-.header-right h1 {
+  }
+  .header-right h1 {
     font-size: 2em;
-}
-.header-right h6 {
+  }
+  .header-right h6 {
     font-size: 0.9em;
     margin-top: 0.6em;
     letter-spacing: 5px;
-}
-
-ul.nav.navbar li a {
+  }
+  ul.nav.navbar li a {
     padding: 1em 1.5em;
-}
-h3.title {
+  }
+  h3.title {
     font-size: 3.5em;
     margin-bottom: 0.6em;
-}
-.work-left {
+  }
+  .work-left {
     padding: 2em 4em 0 0;
     float: left;
     width: 50%;
-}
-.work-right {
+  }
+  .work-right {
     padding: 2em 0 0.5em 5em;
     float: right;
     width: 50%;
-}
-.work-right h5 span.glyphicon {
+  }
+  .work-right h5 span.glyphicon {
     margin-right: 5em;
     margin-left: -7.3em;
-}
-.work-info h5 {
+  }
+  .work-info h5 {
     font-size: 1.2em;
     padding: 0 1em;
-}
-.work-left2 h5 span.glyphicon {
+  }
+  .work-left2 h5 span.glyphicon {
     margin-left: 3.4em;
     margin-right: -6.4em;
-}
-.contact-left iframe {
+  }
+  .contact-left iframe {
     width: 100%;
     min-height: 20em;
     border: none;
-}
-.contact-right {
+  }
+  .contact-right {
     margin-top: 2em;
-}
-.contact-form input[type="text"].email {
+  }
+  .contact-form input[type="text"].email {
     margin: 2em 0 1em 0.5em;
+  }
 }
-}
-*/
 @media (max-width: 480px) {
   .header-left {
     float: none;
