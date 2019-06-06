@@ -154,6 +154,14 @@ body a:hover{
 .top-nav {
     background: black;
 }
+.navbar-toggle {
+    float: none;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    font-size: 1.3em;
+    color: blue;
+}
 .nav > li {
     display: inline-block;
 }
@@ -276,16 +284,27 @@ p {
     background:black;
 }
 .skills-info h6 {
-    font-size: 1.1em;
+    font-size: 2.1em;
     color: white;
     margin-bottom: 0.6em;
+
 }
+.col-md-6 h6{
+display: flex;
+justify-content: center;
+}
+
 
 /*--//skills--*/
 
 
 
 /*--contact--*/
+.contact-form .email{
+    display: flex;
+    justify-content: center;
+}
+
 .contact{
     .gradient(left, #663333, #333333);
 }
@@ -293,20 +312,27 @@ p {
     width: 100%;
     min-height: 29.5em;
     border: none;
+    padding-bottom: 50px;
 }
 
 .address-left {
     float: left;
-    width: 41%;
-	position: relative;
+    width: 50%;
+    position: relative;
+    padding-bottom: 30px;
 }
 .address-right {
     float: right;
     width: 46%;
+    padding-bottom: 30px;
 }
 .contact p {
     color: #fff;
     font-weight: 300;
+}
+.contact-form{
+    width:100%;
+    padding-top: 30px;
 }
 
 .address-left:after {
@@ -319,17 +345,19 @@ p {
     right: -17px;
 }
 .contact-form input[type="text"] {
-    width: 49%;
     color: #fff;
     background: none;
     outline: none;
     font-size: 1em;
     padding: .8em 1em;
     border: 1px solid #8C8C8C;
-    display: inline-block;
+    width:65%;
+
 }
+
+
 .contact-form textarea {
-    width: 49%;
+    width: 65%;
     background: none;
     color: #fff;
     font-size: 1em;
@@ -435,6 +463,28 @@ h3.title {
 
 
 @media(max-width:480px){
+    .main-container{
+        width: 420px;
+        margin:auto;
+    }
+    
+    .nav > li {
+        display: inline-block;
+    }
+    ul.nav.navbar {
+        margin: 0;
+        text-align: center;
+    }
+    ul.nav.navbar li a {
+        color: @white;
+        padding: 1em 2em;
+        font-size: 1.2em;
+        font-family: 'Overlock', cursive;
+    }
+    ul.nav.navbar li a:hover,ul.nav.navbar li a.active,ul.nav.navbar li a:focus{
+        color: red;
+        background: @white;
+    }
 .header-left {
     float: none;
     width: 40%;
